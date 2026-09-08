@@ -1,0 +1,9 @@
+{
+  "dhash_max_distance": 4,
+  "phash_max_distance": 6,
+  "ssim_window_size": 11,
+  "embedding_size": 32,
+  "contact_sheet_pairs_per_page": 12,
+  "thumbnail_size": 224
+}
+

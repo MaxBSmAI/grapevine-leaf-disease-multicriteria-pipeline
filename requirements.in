@@ -1,0 +1,17 @@
+torch==2.7.1
+torchvision==0.22.1
+ultralytics==8.3.162
+captum==0.8.0
+grad-cam==1.5.5
+optuna==4.4.0
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.15.3
+scikit-learn==1.6.1
+Pillow==11.2.1
+PyYAML==6.0.2
+pyarrow==20.0.0
+opencv-python==4.11.0.86
+matplotlib==3.10.3
+seaborn==0.13.2
+psutil==7.0.0

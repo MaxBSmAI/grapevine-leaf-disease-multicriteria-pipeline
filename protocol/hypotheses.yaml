@@ -1,0 +1,39 @@
+schema_version: "1.0.0"
+primary_metric: macro_f1
+alternative: two_sided
+confidence_level: 0.95
+effect_estimator: arithmetic_mean_of_seed_level_paired_differences
+bootstrap_design: crossed_paired_seed_by_group
+multiple_testing_correction: holm
+
+families:
+  architectures_within_regime:
+    multiplicity_scope: separate_within_each_regime
+    regimes: [standard_ce, focal_loss, balanced_ce]
+    comparisons:
+      - [resnet50, vit_b_16]
+      - [resnet50, swin_tiny]
+      - [resnet50, yolov8n_cls]
+      - [vit_b_16, swin_tiny]
+      - [vit_b_16, yolov8n_cls]
+      - [swin_tiny, yolov8n_cls]
+  regimes_within_architecture:
+    multiplicity_scope: separate_within_each_architecture
+    architectures: [resnet50, vit_b_16, swin_tiny, yolov8n_cls]
+    comparisons:
+      - [standard_ce, focal_loss]
+      - [standard_ce, balanced_ce]
+      - [focal_loss, balanced_ce]
+  xai_faithfulness:
+    multiplicity_scope: separate_from_predictive_metrics
+    metrics:
+      - insertion_partial_auc_0_0.5
+      - deletion_partial_auc_0_0.5
+      - difference_from_random_baseline
+
+reporting:
+  require_effect_magnitude: true
+  require_confidence_interval: true
+  require_individual_seed_results: true
+  prohibit_p_value_only_conclusions: true
+

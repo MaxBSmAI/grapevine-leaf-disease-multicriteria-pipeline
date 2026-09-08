@@ -1,0 +1,5 @@
+Architecture,Training regime,Seed,Images,Insertion AUC,Deletion AUC,Insertion AUC SD,Deletion AUC SD
+ResNet50,Standard CE,1337,40,0.9446,0.7654,0.0712,0.3336
+Swin-Tiny,Standard CE,1337,40,0.8823,0.8604,0.2016,0.2489
+ViT-B/16,Standard CE,1337,40,0.9204,0.9017,0.2143,0.2144
+YOLOv8n-cls,Standard CE,1337,40,0.9106,0.7447,0.1654,0.3337

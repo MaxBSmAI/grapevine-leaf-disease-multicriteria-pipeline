@@ -1,0 +1,10 @@
+precisions: [fp32, fp16]
+batch_sizes: [1, 16]
+warmup_iterations: 50
+measured_iterations: 500
+independent_repetitions: 5
+execution_mode: eager
+device: cuda
+timing_method: cuda_events
+int8: false
+torch_compile: false

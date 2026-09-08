@@ -1,0 +1,81 @@
+schema_version: "1.0.0"
+repository_root: .
+paths:
+  dataset_root: '<DATASET_ROOT>'
+  manifest: data/manifests/master_originals_manifest.csv
+  confirmed_groups: data/similarity/confirmed_groups.csv
+  similarity_candidates: data/similarity/similarity_candidates.csv
+  review_decisions: data/similarity/review_decisions_template.csv
+  split: data/splits/canonical_split.csv
+  normalisation: data/metadata/train_normalisation.json
+  protocol: protocol/FROZEN_PROTOCOL.yaml
+  hypotheses: protocol/hypotheses.yaml
+  gate_approvals: protocol/GATE_APPROVALS.json
+  test_lock: protocol/TEST_LOCK.json
+  frozen_experiment: protocol/frozen/FROZEN_EXPERIMENT.json
+  final_config: protocol/frozen/FINAL_CONFIG.json
+  selected_hyperparameters: results/tuning/selected_hyperparameters.yaml
+  focal_gamma: results/tuning/selected_focal_gamma.json
+  xai_config: configs/xai/frozen_xai.yaml
+  profiling_config: configs/profiling.yaml
+  statistics_config: configs/statistics.yaml
+  xai_sample_manifest: results/xai/sample/xai_sample_manifest.csv
+split_config: configs/data/split.json
+group_review_config: configs/data/group_review.json
+xai_sample_config: configs/xai/sample.yaml
+integrated_gradients_config: configs/xai/integrated_gradients.yaml
+perturbation_config: configs/xai/perturbation.yaml
+profiling_config: configs/profiling.yaml
+statistics_config: configs/statistics.yaml
+code_commit: public-release-placeholder
+device: cpu
+num_workers: 0
+tuning:
+  seeds: [101, 202]
+  trials_per_architecture: 8
+  sampler_seed: 9001
+  base_training:
+    optimizer: AdamW
+    learning_rate: 0.0001
+    weight_decay: 0.0001
+    momentum: 0.9
+    batch_size: 16
+    effective_batch_size: 16
+    gradient_accumulation_steps: 1
+    max_optimizer_updates: 2500
+    warmup_updates: 125
+    early_stopping_patience_checks: 6
+    minimum_improvement: 0.0001
+    amp: false
+    deterministic_level: balanced
+    device: cpu
+    num_workers: 0
+    gradient_clip_norm: null
+    code_commit: tree-sha256:f9fd4539499959c8945d401628e037cdb15b68db5167e0e11aaee0b9655a5485
+    architecture_config: null
+confirmatory:
+  seeds: [42, 1337, 2025, 31415, 27182]
+  batch_size: 16
+  effective_batch_size: 16
+  gradient_accumulation_steps: 1
+  max_optimizer_updates: 6000
+  warmup_updates: 300
+  early_stopping_patience_checks: 8
+  minimum_improvement: 0.0001
+  amp: false
+  deterministic_level: balanced
+  device: cpu
+  num_workers: 0
+  gradient_clip_norm: null
+  momentum: 0.9
+  architecture_config: null
+functional_validation:
+  seed: 1729
+  batch_size: 2
+  effective_batch_size: 2
+  gradient_accumulation_steps: 1
+  max_optimizer_updates: 2
+  warmup_updates: 1
+  early_stopping_patience_checks: 1
+  run_kind: functional_validation_non_publication
+classes: [Black Rot, ESCA, Healthy, Leaf Blight]

@@ -1,0 +1,32 @@
+{
+  "code_commit": "tree-sha256:f9fd4539499959c8945d401628e037cdb15b68db5167e0e11aaee0b9655a5485",
+  "confirmatory_seeds": [
+    42,
+    1337,
+    2025,
+    31415,
+    27182
+  ],
+  "final_config_sha256": "3f3043553dbce26dad03322f7080aa951c1184aaf3c6ee6eb37833fd36424ce0",
+  "focal_gamma_sha256": "df0ea37b42b16c8466fa9afd46de3e009e2ae613c18f0702de3cd5777ccb2264",
+  "frozen_at": "2026-08-10T01:25:26.673396+00:00",
+  "hypotheses_sha256": "ec0f9d526e29e95f9d42dc2eb032463d0ecd96b6f72220a4d691490536977bcb",
+  "manifest_sha256": "ec5e7c755d1583c1501156207573de0a41853c16cfbd59191dd0e03661aedc9e",
+  "normalisation_sha256": "5b81569339813fc129c74856c7762e7843455652509fef0d6df89cef33ce6638",
+  "profiling_config_sha256": "c6949f6f14a0ef268e56c50a737df26a324bc2acabe9c28ec783faf3737d95d3",
+  "protocol_sha256": "2363ac7fc9ac5fc611bd2586a55f0fb044d1a24350b38576bfb349d73ae5093c",
+  "schema_version": "1.0.0",
+  "selected_hyperparameters_sha256": "2ee0eef0587839f6f66a54b5c3c9177f416ab9f8cb2cc0b881513dbd0cac153f",
+  "split_sha256": "3561e14f7c6ed9ed3f29e9c157d46efc26829efcf0f2ea559ea9d9533eb8e3d8",
+  "statistics_config_sha256": "dc0aa4180a4ebdca8d446fd3a1991f5d85747aa63b47efd1952c65ba958eff1c",
+  "status": "frozen",
+  "test_results_present": true,
+  "xai_config_sha256": "e72f2e412d1fd2544b13c48af2fe18d4bd7e4f183e3e683bfbbd7b63a2d976e4",
+  "statistical_protocol_amendment": {
+    "date": "2026-08-09",
+    "bootstrap_resamples": 5000,
+    "workers": 8,
+    "authorised_by": "Maximiliano Burgos",
+    "reason": "Runtime reduction after diagnostic validation; no change to data split, model training, checkpoints, or predictions."
+  }
+}

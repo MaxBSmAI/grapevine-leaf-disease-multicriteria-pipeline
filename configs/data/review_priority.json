@@ -1,0 +1,6 @@
+{
+  "close_hash_distance": 4,
+  "contact_sheet_pairs_per_page": 12,
+  "high_rgb_cosine_threshold": 0.9,
+  "high_ssim_threshold": 0.2
+}

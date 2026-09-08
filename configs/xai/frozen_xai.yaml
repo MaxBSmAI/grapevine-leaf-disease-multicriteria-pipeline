@@ -1,0 +1,30 @@
+sample:
+  images_per_class: 10
+  selection_seed: 424242
+  selection_seed_status: explicitly_approved_for_future_xai_sample_without_xai_execution
+integrated_gradients:
+  primary_target: predicted_class_logit
+  secondary_target: ground_truth_class_logit
+  baseline: zero_tensor_in_normalised_space
+  method: gausslegendre
+  initial_steps: 64
+  retry_steps: [128, 256]
+  internal_batch_size: 16
+  rgb_reduction: l1_sum_absolute_channels
+  convergence_relative_error_threshold: 0.05
+specific_methods:
+  resnet50: grad_cam_plus_plus
+  vit_b_16: attention_rollout
+  swin_tiny: approximate_shifted_window_activation_aggregation
+  yolov8n_cls: grad_cam_plus_plus
+perturbation:
+  baseline: gaussian_blur
+  gaussian_kernel_size: 31
+  gaussian_sigma: 10.0
+  block_size: 16
+  fraction_start: 0.0
+  fraction_stop: 0.5
+  fraction_step: 0.025
+  random_trials: 20
+  auc_method: normalised_trapezoidal_partial_auc
+  score_function: softmax_target_probability

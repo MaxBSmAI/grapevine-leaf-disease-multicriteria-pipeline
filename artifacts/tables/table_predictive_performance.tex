@@ -1,0 +1,22 @@
+\begin{table}
+\caption{Confirmatory predictive performance on the locked test set.}
+\label{tab:predictive-performance}
+\begin{tabular}{lllllll}
+\toprule
+Architecture & Training regime & Seeds & Accuracy & Macro-Precision & Macro-Recall & Macro-F1 \\
+\midrule
+ResNet50 & Balanced CE & 5 & 0.9964 & 0.9970 & 0.9972 & 0.9971 \\
+ResNet50 & Focal Loss & 5 & 0.8408 & 0.8818 & 0.8440 & 0.8548 \\
+ResNet50 & Standard CE & 5 & 0.9980 & 0.9978 & 0.9984 & 0.9981 \\
+Swin-Tiny & Balanced CE & 5 & 0.9773 & 0.9816 & 0.9806 & 0.9810 \\
+Swin-Tiny & Focal Loss & 5 & 0.8375 & 0.8645 & 0.8572 & 0.8576 \\
+Swin-Tiny & Standard CE & 5 & 0.9829 & 0.9849 & 0.9848 & 0.9848 \\
+ViT-B/16 & Balanced CE & 5 & 0.9714 & 0.9750 & 0.9753 & 0.9748 \\
+ViT-B/16 & Focal Loss & 5 & 0.8368 & 0.8692 & 0.8558 & 0.8602 \\
+ViT-B/16 & Standard CE & 5 & 0.9832 & 0.9861 & 0.9835 & 0.9847 \\
+YOLOv8n-cls & Balanced CE & 5 & 0.9957 & 0.9953 & 0.9964 & 0.9958 \\
+YOLOv8n-cls & Focal Loss & 5 & 0.4342 & 0.4118 & 0.3851 & 0.3238 \\
+YOLOv8n-cls & Standard CE & 5 & 0.9980 & 0.9984 & 0.9983 & 0.9983 \\
+\bottomrule
+\end{tabular}
+\end{table}

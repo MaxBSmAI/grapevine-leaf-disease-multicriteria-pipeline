@@ -1,0 +1,5 @@
+images_per_class: 10
+selection_seed: null
+selection_seed_status: pending_explicit_approval_before_gate_7_freeze
+model_dependent_filtering: false
+open_test_pixels_during_selection: false

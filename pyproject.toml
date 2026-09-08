@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grape-disease-reproducible"
+version = "0.0.0"
+description = "Reproducible grapevine leaf disease classification study"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+target-version = ["py312"]
+
+[tool.ruff]
+line-length = 88
+src = ["src", "tests", "scripts"]
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = [
+  "cuda: requires an available CUDA device",
+  "integration: integration test",
+  "regression: regression test",
+  "smoke: smoke test",
+]
+
+[tool.mypy]
+strict = true
+warn_unused_configs = true
+packages = ["grape_disease"]
+
+[[tool.mypy.overrides]]
+module = [
+  "captum.*",
+  "cv2",
+  "numpy.*",
+  "optuna.*",
+  "pandas",
+  "pandas.*",
+  "PIL.*",
+  "pytorch_grad_cam.*",
+  "torch",
+  "torch.*",
+  "torchvision.*",
+  "ultralytics.*",
+  "yaml",
+]
+ignore_missing_imports = true
+
+[tool.coverage.run]
+branch = true
+source = ["grape_disease"]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true

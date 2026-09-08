@@ -1,0 +1,16 @@
+{
+  "confirmatory_seeds": [
+    42,
+    1337,
+    2025,
+    31415,
+    27182
+  ],
+  "focal_gamma_sha256": "df0ea37b42b16c8466fa9afd46de3e009e2ae613c18f0702de3cd5777ccb2264",
+  "normalisation_sha256": "5b81569339813fc129c74856c7762e7843455652509fef0d6df89cef33ce6638",
+  "profiling_config_sha256": "c6949f6f14a0ef268e56c50a737df26a324bc2acabe9c28ec783faf3737d95d3",
+  "schema_version": "1.0.0",
+  "selected_hyperparameters_sha256": "2ee0eef0587839f6f66a54b5c3c9177f416ab9f8cb2cc0b881513dbd0cac153f",
+  "statistics_config_sha256": "dc0aa4180a4ebdca8d446fd3a1991f5d85747aa63b47efd1952c65ba958eff1c",
+  "xai_config_sha256": "e72f2e412d1fd2544b13c48af2fe18d4bd7e4f183e3e683bfbbd7b63a2d976e4"
+}

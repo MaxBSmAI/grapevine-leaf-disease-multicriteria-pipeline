@@ -1,0 +1,16 @@
+{
+  "authorisation_date": "2026-07-31",
+  "authorised_by": "Maximiliano Burgos",
+  "code_commit": "tree-sha256:f9fd4539499959c8945d401628e037cdb15b68db5167e0e11aaee0b9655a5485",
+  "explicit_evaluation_authorisation": true,
+  "final_config_sha256": "3f3043553dbce26dad03322f7080aa951c1184aaf3c6ee6eb37833fd36424ce0",
+  "frozen_experiment_sha256": "47db26b4f36f28ffbf890b01c657a23d74a9ea52d4180ff8505e767075f604dc",
+  "frozen_protocol_sha256": "2363ac7fc9ac5fc611bd2586a55f0fb044d1a24350b38576bfb349d73ae5093c",
+  "hypotheses_sha256": "ec0f9d526e29e95f9d42dc2eb032463d0ecd96b6f72220a4d691490536977bcb",
+  "manifest_sha256": "ec5e7c755d1583c1501156207573de0a41853c16cfbd59191dd0e03661aedc9e",
+  "reason": "Explicit Gate 9 authorisation after experiment freeze",
+  "schema_version": "1.0.0",
+  "split_sha256": "3561e14f7c6ed9ed3f29e9c157d46efc26829efcf0f2ea559ea9d9533eb8e3d8",
+  "test_access": true,
+  "statistical_protocol_amendment": "bootstrap_resamples_5000_workers_8_authorised_2026-08-09"
+}

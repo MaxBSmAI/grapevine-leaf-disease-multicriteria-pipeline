@@ -1,0 +1,12 @@
+{
+  "seed": 1729,
+  "proportions": {"train": 0.70, "validation": 0.15, "test": 0.15},
+  "preferred_class_tolerance_pp": 1.0,
+  "maximum_class_tolerance_pp": 2.0,
+  "overall_tolerance_pp": 0.5,
+  "candidate_restarts": 20000,
+  "total_cost_weight": 1.0,
+  "class_cost_weight": 2.0,
+  "violation_cost_weight": 10.0,
+  "approval_status": "approved_gate_3"
+}

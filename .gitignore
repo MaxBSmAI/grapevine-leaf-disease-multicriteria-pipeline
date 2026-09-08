@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+.install/
+venv/
+dist/
+build/
+*.egg-info/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Generated research artefacts
+outputs/**
+results/**
+checkpoints/**
+!outputs/
+!outputs/**/
+# Local configuration and credentials
+.env
+*.local.yaml
+*.local.json

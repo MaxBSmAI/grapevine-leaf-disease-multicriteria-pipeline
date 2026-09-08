@@ -1,0 +1,25 @@
+{
+  "allowed_decisions": [
+    "confirmed_same_source",
+    "confirmed_related",
+    "visually_similar_not_related",
+    "uncertain",
+    "rejected"
+  ],
+  "block_multiclass_groups": true,
+  "blocking_decisions": [
+    "uncertain"
+  ],
+  "grouping_decisions": [
+    "confirmed_same_source",
+    "confirmed_related"
+  ],
+  "protocol_version": "gate2-group-review-v1",
+  "require_iso_date": true,
+  "required_metadata_fields": [
+    "reason",
+    "reviewer",
+    "date",
+    "evidence"
+  ]
+}

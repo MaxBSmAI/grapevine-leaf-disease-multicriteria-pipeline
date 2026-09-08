@@ -1,0 +1,26 @@
+\begin{table}
+\caption{Computational feasibility indicators for representative confirmatory checkpoints.}
+\label{tab:computational-feasibility}
+\begin{tabular}{llllll}
+\toprule
+Architecture & Precision & Batch size & Params (M) & Checkpoint (MB) & Mean latency (ms) \\
+\midrule
+ResNet50 & fp16 & 1 & 23.52 & 269.66 & 7.29 \\
+ResNet50 & fp16 & 16 & 23.52 & 269.66 & 17.38 \\
+ResNet50 & fp32 & 1 & 23.52 & 269.66 & 5.88 \\
+ResNet50 & fp32 & 16 & 23.52 & 269.66 & 31.87 \\
+Swin-Tiny & fp16 & 1 & 27.52 & 315.49 & 13.46 \\
+Swin-Tiny & fp16 & 16 & 27.52 & 315.49 & 25.66 \\
+Swin-Tiny & fp32 & 1 & 27.52 & 315.49 & 10.36 \\
+Swin-Tiny & fp32 & 16 & 27.52 & 315.49 & 49.51 \\
+ViT-B/16 & fp16 & 1 & 85.80 & 982.18 & 7.01 \\
+ViT-B/16 & fp16 & 16 & 85.80 & 982.18 & 46.55 \\
+ViT-B/16 & fp32 & 1 & 85.80 & 982.18 & 11.97 \\
+ViT-B/16 & fp32 & 16 & 85.80 & 982.18 & 108.48 \\
+YOLOv8n-cls & fp16 & 1 & 1.44 & 11.16 & 4.20 \\
+YOLOv8n-cls & fp16 & 16 & 1.44 & 11.16 & 4.23 \\
+YOLOv8n-cls & fp32 & 1 & 1.44 & 11.16 & 3.45 \\
+YOLOv8n-cls & fp32 & 16 & 1.44 & 11.16 & 3.20 \\
+\bottomrule
+\end{tabular}
+\end{table}

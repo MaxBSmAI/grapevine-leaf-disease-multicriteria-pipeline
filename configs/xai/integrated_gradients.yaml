@@ -1,0 +1,9 @@
+method: gausslegendre
+initial_steps: 64
+retry_steps: [128, 256]
+internal_batch_size: 16
+convergence_relative_error_threshold: 0.05
+primary_target: predicted_class_logit
+secondary_target: ground_truth_class_logit
+baseline: zero_tensor_in_normalised_space
+rgb_reduction: l1_sum_absolute_channels

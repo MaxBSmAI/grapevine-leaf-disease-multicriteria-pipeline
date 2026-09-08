@@ -1,0 +1,11 @@
+baseline: gaussian_blur
+gaussian_kernel_size: 31
+gaussian_sigma: 10.0
+unit: non_overlapping_blocks
+block_size: 16
+fraction_start: 0.0
+fraction_stop: 0.5
+fraction_step: 0.025
+random_trials: 20
+auc_method: normalised_trapezoidal_partial_auc
+score_function: softmax_target_probability

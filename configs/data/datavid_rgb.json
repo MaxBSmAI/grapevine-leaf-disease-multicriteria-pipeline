@@ -1,0 +1,32 @@
+{
+  "source_dataset": "DataVID - RGB",
+  "class_to_idx": {
+    "Black Rot": 0,
+    "ESCA": 1,
+    "Healthy": 2,
+    "Leaf Blight": 3
+  },
+  "expected_total_images": 9027,
+  "expected_originals": 4062,
+  "expected_augmented": 4965,
+  "expected_originals_by_class": {
+    "Black Rot": 1180,
+    "ESCA": 1383,
+    "Healthy": 423,
+    "Leaf Blight": 1076
+  },
+  "expected_width": 256,
+  "expected_height": 256,
+  "expected_colour_mode": "RGB",
+  "expected_format": "JPEG",
+  "image_extensions": [".jpg", ".jpeg"],
+  "variant_suffixes": [
+    "flipLR",
+    "90deg",
+    "180deg",
+    "270deg",
+    "new30degFlipLR"
+  ],
+  "require_parquet": true
+}
+

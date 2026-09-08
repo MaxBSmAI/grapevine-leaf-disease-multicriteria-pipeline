@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+title: "Reproducible multicriteria grapevine leaf disease classification pipeline"
+message: "Please cite the associated manuscript and this software release."
+authors:
+  - family-names: "Burgos-San Martin"
+    given-names: "Maximiliano"
+  - family-names: "Figueroa-Flores"
+    given-names: "Carola"
+  - family-names: "Lillo-Saavedra"
+    given-names: "Mario"
+  - family-names: "Miranda"
+    given-names: "Ismael"
+version: 1.0.0
+date-released: 2026-09-08
+license: MIT
