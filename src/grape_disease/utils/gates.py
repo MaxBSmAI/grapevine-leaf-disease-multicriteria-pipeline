@@ -17,7 +17,9 @@ def load_gate_approvals(path: Path) -> dict[str, Any]:
     """Load the versioned gate record and validate its basic structure."""
 
     try:
-        value = json.loads(path.read_text(encoding="utf-8"))
+        # ``utf-8-sig`` accepts both canonical UTF-8 and files exported by
+        # Windows tools with a leading BOM.
+        value = json.loads(path.read_text(encoding="utf-8-sig"))
     except (OSError, json.JSONDecodeError) as exc:
         raise GateApprovalError(f"Cannot read gate approvals {path}: {exc}") from exc
     if not isinstance(value, dict) or not isinstance(value.get("gates"), dict):
